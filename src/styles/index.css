@@ -20,13 +20,13 @@
     position: absolute;
 }
 
-body {
+html, body {
     height: 100%;
     width: 100%;
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -143,3 +143,32 @@ h3 {
     font-size: 24px;
     color: var(--gray-400);
 }
+
+@media screen and (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 64px;
+        padding-top: 224px;
+    }
+    #inputText {
+        height: 560px;
+        padding: 0 40px;
+    }
+    #imgNotFound {
+        display: none;
+    }
+    #containerEncryptor{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    #containerWithEncryptor{
+        width: 90%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+  }

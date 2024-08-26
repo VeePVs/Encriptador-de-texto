@@ -1,6 +1,6 @@
 function encryptor() {
     let textArea = document.querySelector('#inputText').value;
-    let areaEncrytor = document.querySelector('#containerEncryptor');
+    let areaEncrytor = document.querySelector('#containerEncryptor') || document.querySelector('#containerWithEncryptor');
     
     let conversiones = {
         'e': 'enter',
