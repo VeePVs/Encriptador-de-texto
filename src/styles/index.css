@@ -108,7 +108,13 @@ h3 {
     background-color: #D8DFE8;
 }
 
-.containerEncryptor {
+#buttonCopy {
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    background-color: white;
+}
+
+#containerEncryptor {
     height: 95%;
     width: 400px;
     background-color: white;
@@ -119,4 +125,21 @@ h3 {
     padding: 32px;
     gap: 32px;
     justify-content: center;
+}
+
+#containerWithEncryptor {
+    height: 95%;
+    width: 400px;
+    background-color: white;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    gap: 32px;
+}
+
+.textEncryptor {
+    font-size: 24px;
+    color: var(--gray-400);
 }
