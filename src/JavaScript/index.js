@@ -20,3 +20,26 @@ function encryptor() {
         `<p class="textEncryptor">${result}</p>
         <button class="button" id="buttonCopy">Copiar</button>`
 }
+
+function uncryptor() {
+    let textArea = document.querySelector('#inputText').value;
+    let areaEncrytor = document.querySelector('#containerEncryptor') || document.querySelector('#containerWithEncryptor');
+    
+    let conversiones = {
+        'enter': 'e',
+        'imes': 'i',
+        'ai': 'a',
+        'ober': 'o',
+        'ufat': 'u'
+    };
+
+    let result = textArea.split('').map(char => conversiones[char] || char).join('');
+    while (areaEncrytor.firstChild) {
+        areaEncrytor.removeChild(areaEncrytor.firstChild)
+    }
+
+    areaEncrytor.id = 'containerWithEncryptor';
+    areaEncrytor.innerHTML = 
+        `<p class="textEncryptor">${result}</p>
+        <button class="button" id="buttonCopy">Copiar</button>`
+}
