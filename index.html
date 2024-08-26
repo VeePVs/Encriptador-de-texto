@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enciriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/index.css">
 </head>
 <body>
-    <header>
-        <img src="/src/img/Logo.png" alt="">
+    <header >
+        <img id="logo" src="/src/img/Logo.png" alt="">
     </header>
     <main>
-        <section>
-            <input type="text">
+        <section class="containerText">
+            <textarea id="inputText" type="text" placeholder="Ingrese el texto aqui">asd</textarea>
              <div>
-                <p>Solo letras minúsculas y sin acentos</p>
-                <div>
-                     <button>Encriptar</button>
-                     <button>Desencriptar</button>
+                <p class="info"><img src="./src/img/informacion.png" class="imgInfo" alt="">Solo letras minúsculas y sin acentos</p>
+                <div class="buttons">
+                     <button class="button" id="buttonEncryptor">Encriptar</button>
+                     <button class="button" id="buttonUncriptar">Desencriptar</button>
                 </div>
              </div>
         </section>
-        <section> 
+        <section class="containerEncryptor"> 
             <img src="/src/img/Muñeco.png" alt="">
-            <h3>Ningún mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="anyMsm">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p class="anyMsmPaf">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
         </section>
     </main>
     
